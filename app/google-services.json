@@ -1,0 +1,58 @@
+{
+  "project_info": {
+    "project_number": "973788994265",
+    "firebase_url": "https://pueblo-y-reforma.firebaseio.com",
+    "project_id": "pueblo-y-reforma",
+    "storage_bucket": "pueblo-y-reforma.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:973788994265:android:67c2c735b29fadf2",
+        "android_client_info": {
+          "package_name": "ar.com.puebloyreforma.pyr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "973788994265-au463lipeai9lklgkmksrjms7lnde67o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ar.com.puebloyreforma.pyr",
+            "certificate_hash": "a32dd85df52bbe690ef7f3efb94770f386bd0e23"
+          }
+        },
+        {
+          "client_id": "973788994265-fsvfr8ra97iu2l01s1lpsqjb2uof3mi8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW5L52vln6dDkpV6l2V785cpeRvL5sW_c"
+        },
+        {
+          "current_key": "AIzaSyDRMW77I8Mhxy9mxvzCnqishO3NrSzoxaw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "973788994265-fsvfr8ra97iu2l01s1lpsqjb2uof3mi8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

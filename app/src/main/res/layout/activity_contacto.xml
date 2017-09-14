@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    tools:context="ar.com.puebloyreforma.pyr.ContactoActivity">
+
+
+
+
+    <br.com.bloder.magic.view.MagicButton
+        android:id="@+id/magic_button_fb"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:magic_button_size="50dp"
+        app:button_icon="@drawable/facebook"
+        app:button_icon_width="25dp"
+        app:button_icon_height="25dp"
+        app:hide_text="Facebook"
+        app:icon_button_color="#375dda"
+        app:expandable_area_color="#533dff"/>
+
+
+
+
+    <br.com.bloder.magic.view.MagicButton
+        android:id="@+id/magic_button_tt"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:magic_button_size="50dp"
+        app:button_icon="@drawable/twitter"
+        app:button_icon_width="25dp"
+        app:button_icon_height="25dp"
+        app:hide_text="Twitter"
+        app:icon_button_color="#d0d4e2"
+        app:expandable_area_color="#0c92b7"/>
+
+    <br.com.bloder.magic.view.MagicButton
+        android:id="@+id/magic_button_gmas"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:magic_button_size="50dp"
+        app:button_icon="@drawable/gmas"
+        app:button_icon_width="25dp"
+        app:button_icon_height="25dp"
+        app:hide_text="Google+"
+        app:icon_button_color="#b40033"
+        app:expandable_area_color="#cf3f57"/>
+
+
+    <br.com.bloder.magic.view.MagicButton
+        android:id="@+id/magic_button_in"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:magic_button_size="50dp"
+        app:button_icon="@drawable/inst"
+        app:button_icon_width="25dp"
+        app:button_icon_height="25dp"
+        app:hide_text="Instagram"
+        app:icon_button_color="#01ffffff"
+        app:expandable_area_color="#a373d5"/>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
