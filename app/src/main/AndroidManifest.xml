@@ -25,6 +25,7 @@
         <activity android:name=".ReglamentoActivity" />
         <activity android:name=".SysacadActivity" />
         <activity android:name=".CalendarActivity" />
+        <activity android:name=".NavigationMenu" />
         <activity android:name=".NoticiasActivity">
             <intent-filter>
                 <action android:name="NOTICIA" />
