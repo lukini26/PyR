@@ -14,6 +14,7 @@ import java.util.concurrent.TimeUnit;
 
 public class MainActivity extends AppCompatActivity {
 
+
     String arrayName[] = {"Calendario" ,
                             "Sysacad" ,
                             "Reglamento",
@@ -79,6 +80,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        } ;
+        }
 
 }
