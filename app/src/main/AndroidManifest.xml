@@ -97,6 +97,8 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/widget_cal_info" />
         </receiver>
+
+        <activity android:name=".NavigationMenu"></activity>
     </application>
 
 </manifest>
