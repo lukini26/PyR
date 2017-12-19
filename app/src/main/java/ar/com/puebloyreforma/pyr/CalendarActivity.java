@@ -5,9 +5,10 @@ import java.util.Calendar;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 
 
-public class CalendarActivity extends AppCompatActivity {
+public class CalendarActivity extends MyAppCompatActivity {
     ViewPager viewPager ;
     ViewPagerAdapter adapter ;
         private  Integer[] images = {R.drawable.ref ,
@@ -22,6 +23,9 @@ public class CalendarActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar2);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("ChildNavigationActivity");
        viewPager = (ViewPager)findViewById(R.id.ViewPager);
         adapter = new ViewPagerAdapter(CalendarActivity.this,images);
         viewPager.setAdapter(adapter) ;

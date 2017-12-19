@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                                 break;
                             case 1:
                                 Toast.makeText(MainActivity.this, "elegiste "+ arrayName[index], Toast.LENGTH_SHORT).show();
-                                Intent movefa = new Intent (MainActivity.this,NavigationMenu.class);
+                                Intent movefa = new Intent (MainActivity.this,SysacadActivity.class);
                                 startActivity(movefa);
                                 break;
                             case 2:

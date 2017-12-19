@@ -3,10 +3,11 @@ package ar.com.puebloyreforma.pyr;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
-public class PdfsActivity extends AppCompatActivity {
+public class PdfsActivity extends MyAppCompatActivity {
     public String getTarget() {
         return target;
     }
@@ -20,7 +21,19 @@ public class PdfsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+
         setContentView(R.layout.activity_pdfs);
+
+            Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+            toolbar.setTitle("ChildNavigationActivity");
+
+
+
+
+
+
         Button tt , tm , tn, reg ;
         tt = (Button)this.findViewById(R.id.tt);
         tm = (Button)this.findViewById(R.id.tm);

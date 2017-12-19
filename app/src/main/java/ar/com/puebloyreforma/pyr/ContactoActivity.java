@@ -10,6 +10,7 @@ import android.net.Uri;
 import android.support.v4.text.util.LinkifyCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Toast;
 
@@ -19,12 +20,16 @@ import br.com.bloder.magic.view.MagicButton;
 
 import static android.widget.Toast.LENGTH_LONG;
 
-public class ContactoActivity extends AppCompatActivity {
+public class ContactoActivity extends MyAppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contacto);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("ChildNavigationActivity");
+
         MagicButton btf, btins , btgmas , bttt ;
         // FACEBOOK BUTTON
         btf = (MagicButton) findViewById(R.id.magic_button_fb);
