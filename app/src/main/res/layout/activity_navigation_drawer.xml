@@ -8,11 +8,13 @@
     tools:context=".MyAppCompatActivity">
 
     <android.support.design.widget.AppBarLayout
+
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:theme="@style/AppBaseTheme" >
 
         <android.support.v7.widget.Toolbar
+
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="160dp"
@@ -22,6 +24,7 @@
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.widget.DrawerLayout
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/drawer_layout"
@@ -29,11 +32,13 @@
         tools:openDrawer="start">
 
         <RelativeLayout
+
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/content" />
 
         <android.support.design.widget.NavigationView
+            app:headerLayout = "@layout/menuheader"
             android:id="@+id/nav_view"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
