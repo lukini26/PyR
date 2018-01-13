@@ -99,7 +99,7 @@
                 android:resource="@xml/widget_cal_info" />
         </receiver>
 
-        <activity android:name=".NavigationMenu" />
+
         <activity android:name=".MyAppCompatActivity"></activity>
     </application>
 

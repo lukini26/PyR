@@ -65,10 +65,10 @@ public class NoticiasActivity extends MyAppCompatActivity {
         mBlogList = (RecyclerView)findViewById(R.id.blog_list);
         mBlogList.setHasFixedSize(true);
         mBlogList.setLayoutManager(new LinearLayoutManager(this));
-        YoYo.with(Techniques.RotateInDownRight)
+        /*YoYo.with(Techniques.RotateInDownRight)
                 .duration(700)
                 .repeat(1)
-                .playOn(findViewById(R.id.blog_list));
+                .playOn(findViewById(R.id.blog_list));*/
 
         // Send a Query to the database
         database = FirebaseDatabase.getInstance();
@@ -134,7 +134,7 @@ public class NoticiasActivity extends MyAppCompatActivity {
 
                                 Intent shareIntent = new Intent();
                                 shareIntent.setAction(Intent.ACTION_SEND);
-                                shareIntent.putExtra(Intent.EXTRA_TEXT, "This is one image I'm sharing.");
+                                shareIntent.putExtra(Intent.EXTRA_TEXT, "http://www.puebloyreforma.com.ar/");
                                 shareIntent.putExtra(Intent.EXTRA_STREAM, path);
                                 shareIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
                                 shareIntent.setType("image/*");
