@@ -73,6 +73,7 @@
 
         <activity android:name=".PdfsActivity" />
 
+
         <receiver android:name=".CalendarWidget">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -99,8 +100,8 @@
                 android:resource="@xml/widget_cal_info" />
         </receiver>
 
-
-        <activity android:name=".MyAppCompatActivity"></activity>
+        <activity android:name=".MyAppCompatActivity" />
+        <activity android:name=".InformacionActivity"></activity>
     </application>
 
 </manifest>

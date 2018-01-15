@@ -54,7 +54,7 @@ public abstract class MyAppCompatActivity extends AppCompatActivity {
                         break;
                     case R.id.reglamento:
                         Toast.makeText(MyAppCompatActivity.this, "elegiste ", Toast.LENGTH_SHORT).show();
-                        Intent movefew = new Intent (MyAppCompatActivity.this,PdfsActivity.class);
+                        Intent movefew = new Intent (MyAppCompatActivity.this,InformacionActivity.class);
                         startActivity(movefew);
                         break;
                     case R.id.contacto:

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#211e1e</color>
+    <color name="colorPrimary">#1e1e1e</color>
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#ffffff</color>
     <color name="white">#ffffff</color>
     <color name="darkblue">#051851</color>
+    <color name="textcolor">#430da1</color>
+    <color name="tabindicator">#8793b7</color>
+    <color name="tuviejacolor">#5a1c79</color>
 </resources>
