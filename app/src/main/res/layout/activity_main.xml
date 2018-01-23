@@ -8,13 +8,15 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
+    android:background="@drawable/aa"
     tools:context="ar.com.puebloyreforma.pyr.MainActivity">
 
 
-
-    <com.hitomi.cmlibrary.CircleMenu
-        android:id="@+id/circle_menu"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="HOLA VIEJA YA ESTA LA APK" />
 </RelativeLayout>

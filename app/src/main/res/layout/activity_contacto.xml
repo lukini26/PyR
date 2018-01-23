@@ -11,8 +11,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:paddingBottom="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
@@ -35,6 +35,11 @@
         app:hide_text="Facebook"
         app:icon_button_color="#375dda"
         app:expandable_area_color="#533dff"/>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_weight="0" />
+
 
 
 
@@ -51,6 +56,11 @@
         app:hide_text="Twitter"
         app:icon_button_color="#d0d4e2"
         app:expandable_area_color="#0c92b7"/>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_weight="0" />
+
 
     <br.com.bloder.magic.view.MagicButton
         android:id="@+id/magic_button_gmas"
@@ -65,6 +75,11 @@
         app:icon_button_color="#b40033"
         app:expandable_area_color="#cf3f57"/>
 
+    <View
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_weight="0" />
+
 
     <br.com.bloder.magic.view.MagicButton
         android:id="@+id/magic_button_in"
@@ -78,6 +93,12 @@
         app:hide_text="Instagram"
         app:icon_button_color="#01ffffff"
         app:expandable_area_color="#a373d5"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:src="@drawable/mesafinal"/>
 
 
 

@@ -26,7 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding= "10dp"
-            android:src="@drawable/utn"
+            android:src="@drawable/mesafinal"
             />
     </android.support.design.widget.AppBarLayout>
            <android.support.design.widget.TabLayout
@@ -36,7 +36,7 @@
                app:tabMode="fixed"
                android:id="@+id/tablayout_id"
                app:tabTextColor="@color/textcolor"
-               app:tabIndicatorColor="@color/tabindicator"
+               app:tabIndicatorColor="@color/caldroid_gray"
                android:background="@color/colorPrimary"
                ></android.support.design.widget.TabLayout>
 

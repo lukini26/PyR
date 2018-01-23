@@ -124,7 +124,7 @@ public class NoticiasActivity extends MyAppCompatActivity {
                                             .setAllowedOverRoaming(false)
                                             .setTitle(filename)
                                             .setMimeType("image/jpeg")
-                                            .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
+                                           // .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
                                             .setDestinationInExternalPublicDir(Environment.DIRECTORY_PICTURES,
                                                     File.separator + "pyr" + File.separator + filename);
                                 String pathl = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES)+ "/Pyr/" + filename;
@@ -199,7 +199,7 @@ public class NoticiasActivity extends MyAppCompatActivity {
                 public void onClick(View v) {
                     // click en la imagen hace algo
                     //añadir luego
-                    Toast.makeText(v.getContext(), ("hola"+ getPosition()), Toast.LENGTH_SHORT).show();
+                   // Toast.makeText(v.getContext(), ("hola"+ getPosition()), Toast.LENGTH_SHORT).show();
 
                 }
             });

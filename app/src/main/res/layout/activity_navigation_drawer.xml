@@ -19,7 +19,38 @@
             android:layout_width="match_parent"
             android:layout_height="160dp"
             android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppBaseTheme" />
+            app:popupTheme="@style/AppBaseTheme" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:tint="#ffffff"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="220dp"
+                android:layout_marginBottom="100dp"
+
+
+
+                android:src="@drawable/pepepepe" />
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+        </android.support.v7.widget.Toolbar>
 
     </android.support.design.widget.AppBarLayout>
 
@@ -40,6 +71,9 @@
         <android.support.design.widget.NavigationView
             app:headerLayout = "@layout/menuheader"
             android:id="@+id/nav_view"
+            android:background="@color/caldroid_black"
+            app:itemTextColor="@color/white"
+            app:itemIconTint="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="start"

@@ -34,10 +34,8 @@ public class PdfsActivity extends MyAppCompatActivity {
 
 
 
-        Button tt , tm , tn, reg ;
-        tt = (Button)this.findViewById(R.id.tt);
-        tm = (Button)this.findViewById(R.id.tm);
-        tn = (Button)this.findViewById(R.id.tn);
+        Button  reg ;
+
         reg = (Button)this.findViewById(R.id.reg);
 
         final String pdfs[] = {"tm" ,
@@ -46,40 +44,7 @@ public class PdfsActivity extends MyAppCompatActivity {
                 "Ord1549"
         } ;
 
-        tm.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-                setTarget(pdfs[0]);
-                Intent hola = new Intent (PdfsActivity.this,ReglamentoActivity.class);
-                hola.putExtra("TARGET", getTarget());
-                startActivity(hola);
-            }
-        });
-
-
-
-        tt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                setTarget(pdfs[1]);
-                Intent hola = new Intent (PdfsActivity.this,ReglamentoActivity.class);
-                hola.putExtra("TARGET", getTarget());
-                startActivity(hola);
-            }
-        });
-
-        tn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                setTarget(pdfs[2]);
-                Intent hola = new Intent (PdfsActivity.this,ReglamentoActivity.class);
-                hola.putExtra("TARGET", getTarget());
-                startActivity(hola);
-            }
-        });
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

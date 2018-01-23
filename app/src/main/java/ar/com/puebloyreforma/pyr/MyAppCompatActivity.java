@@ -28,6 +28,9 @@ public abstract class MyAppCompatActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("Pueblo Y Reforma");
         setSupportActionBar(toolbar);
+
+
+
         final DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 MyAppCompatActivity.this, drawer, toolbar, R.string.open, R.string.close);
@@ -43,17 +46,17 @@ public abstract class MyAppCompatActivity extends AppCompatActivity {
 
                 switch (id) {
                     case R.id.calendario:
-                        Toast.makeText(MyAppCompatActivity.this,"elegiste calendario ", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(MyAppCompatActivity.this,"elegiste calendario ", Toast.LENGTH_SHORT).show();
                         Intent movef = new Intent (MyAppCompatActivity.this,CalendarActivity.class);
                         startActivity(movef);
                         break;
                     case R.id.sysacad:
-                        Toast.makeText(MyAppCompatActivity.this, "elegiste tu vieja entanga", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MyAppCompatActivity.this, "Fuiste redirigido al sitio de la UtnFrro", Toast.LENGTH_SHORT).show();
                         Intent movefa = new Intent (MyAppCompatActivity.this,SysacadActivity.class);
                         startActivity(movefa);
                         break;
-                    case R.id.reglamento:
-                        Toast.makeText(MyAppCompatActivity.this, "elegiste ", Toast.LENGTH_SHORT).show();
+                    case R.id.aulas:
+                        //Toast.makeText(MyAppCompatActivity.this, "elegiste ", Toast.LENGTH_SHORT).show();
                         Intent movefew = new Intent (MyAppCompatActivity.this,InformacionActivity.class);
                         startActivity(movefew);
                         break;
@@ -65,18 +68,23 @@ public abstract class MyAppCompatActivity extends AppCompatActivity {
                         //Toast.makeText(MainActivity.this, "El tac se la come", Toast.LENGTH_SHORT).show();
                         Intent hola = new Intent (MyAppCompatActivity.this,PermissionActivity.class);
                         startActivity(hola);
-                        break;}
+                        break;
+
+                    case R.id.reglamento:
+                        //Toast.makeText(MainActivity.this, "El tac se la come", Toast.LENGTH_SHORT).show();
+                        Intent sobamela = new Intent (MyAppCompatActivity.this,PdfsActivity.class);
+                        startActivity(sobamela);
+                        break;
+
+
+                }
 
 
 
 
 
 
-                /*if (id == R.id.button_0) {
 
-                } else if (id == R.id.button_1) {
-
-                }*/
                 DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
                 drawer.closeDrawer(GravityCompat.START);
                 return true;

@@ -1,47 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical" android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:background="@drawable/aacggb">
+    android:background="@drawable/aulas_logo_examen">
+
 
     <Button
         android:id="@+id/lunes"
         style="@style/BlackButton"
-        android:layout_width="match_parent"
+        android:layout_width="242dp"
         android:layout_height="wrap_content"
         android:background="@drawable/bb"
         android:text="Lunes" />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_weight="0" />
 
     <Button
         android:id="@+id/martes"
-        android:layout_width="match_parent"
+        android:layout_width="242dp"
         android:layout_height="wrap_content"
         style="@style/BlackButton"
         android:background="@drawable/bb"
         android:text="Martes" />
 
+    <View
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_weight="0" />
+
+
     <Button
         android:id="@+id/miercoles"
-        android:layout_width="match_parent"
+        android:layout_width="242dp"
         android:layout_height="wrap_content"
         style="@style/BlackButton"
         android:background="@drawable/bb"
         android:text="Miercoles" />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_weight="0" />
 
     <Button
         android:id="@+id/jueves"
         style="@style/BlackButton"
         android:background="@drawable/bb"
-        android:layout_width="match_parent"
+        android:layout_width="242dp"
         android:layout_height="wrap_content"
         android:text="Jueves" />
 
+    <View
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_weight="0" />
     <Button
         android:id="@+id/viernes"
         style="@style/BlackButton"
         android:background="@drawable/bb"
-        android:layout_width="match_parent"
+        android:layout_width="242dp"
         android:layout_height="wrap_content"
         android:text="Viernes" />
+
 </LinearLayout>
