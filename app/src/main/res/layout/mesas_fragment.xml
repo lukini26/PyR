@@ -25,20 +25,22 @@
         style="@style/BlackButton"
         android:background="@drawable/bb"
         android:text="Martes" />
-
     <View
         android:layout_width="0dp"
         android:layout_height="20dp"
         android:layout_weight="0" />
-
-
     <Button
-        android:id="@+id/miercoles"
+        android:id="@+id/asd"
         android:layout_width="242dp"
         android:layout_height="wrap_content"
         style="@style/BlackButton"
         android:background="@drawable/bb"
-        android:text="Miercoles" />
+        android:text="miercoles" />
+
+
+
+
+
     <View
         android:layout_width="0dp"
         android:layout_height="20dp"
@@ -63,5 +65,13 @@
         android:layout_width="242dp"
         android:layout_height="wrap_content"
         android:text="Viernes" />
+    <Button
+        android:id="@+id/mierco"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        style="@style/BlackButton"
+        android:background="@drawable/bb"
+        android:text="Miercoles"
+        android:visibility="invisible"/>
 
 </LinearLayout>

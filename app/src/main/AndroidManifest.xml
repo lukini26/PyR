@@ -10,9 +10,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/pyricon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/pyricon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
@@ -21,6 +21,14 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+
+
+
+        <activity android:name=".InformacionActivity">
+
+
         </activity>
         <activity android:name=".ReglamentoActivity" />
         <activity android:name=".SysacadActivity" />
@@ -47,6 +55,8 @@
                 <category android:name="android.intent.category.CONTACTO" />
             </intent-filter>
         </activity>
+
+
 
         <service android:name=".FirebaseMessagingService">
             <intent-filter>

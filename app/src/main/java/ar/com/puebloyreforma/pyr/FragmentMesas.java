@@ -27,8 +27,8 @@ public class FragmentMesas  extends android.support.v4.app.Fragment implements V
 
 
 
-    public String[] dia={ "lunes" , "martes" ,"miercoles " ,"jueves" , "viernes"   } ;
-     String[] direc ={ "lunes" , "martes" ,"miercoles " ,"jueves" , "viernes"   } ;
+    public String[] dia={ "lunes" , "martes" ,"mierco " ,"jueves" , "viernes" ,"asd"  } ;
+     String[] direc ={ "lunes" , "martes" ,"mierco " ,"jueves" , "viernes", "asd"   } ;
      //esto esta asi porque soy un villero y copipasteo para inicilizar un array pero me la re banco vieja
 
     private FirebaseDatabase database;
@@ -63,7 +63,7 @@ public class FragmentMesas  extends android.support.v4.app.Fragment implements V
                 finale = direc[1] ;
                 break;
 
-            case R.id.miercoles:
+            case R.id.mierco:
                 finale = direc[2] ;
                 break;
 
@@ -79,13 +79,17 @@ public class FragmentMesas  extends android.support.v4.app.Fragment implements V
                 finale = direc[4] ;
                 break;
 
+            case R.id.asd:
+                finale = direc[5] ;
+                break;
+
             default:
                 break;
         }
 
 
         String url = finale;
-        Intent i = new Intent(Intent.ACTION_VIEW);
+        Intent i = new Intent(Intent.ACTION_VIEW );
         i.setData(Uri.parse(url));
         startActivity(i);
 
@@ -102,19 +106,20 @@ public class FragmentMesas  extends android.support.v4.app.Fragment implements V
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.mesas_fragment , container, false) ;
-        Button lunes, martes, miercoles, jueves, viernes;
+        Button lunes, martes, mierco, jueves, viernes, asd;
         lunes = (Button)view.findViewById(R.id.lunes);
         lunes.setOnClickListener(this);
         martes = (Button)view.findViewById(R.id.martes);
         martes.setOnClickListener(this);
-        miercoles = (Button)view.findViewById(R.id.miercoles);
-        miercoles.setOnClickListener(this);
+        mierco = (Button)view.findViewById(R.id.mierco);
+        mierco.setOnClickListener(this);
         jueves = (Button)view.findViewById(R.id.jueves);
         jueves.setOnClickListener(this);
         viernes = (Button)view.findViewById(R.id.viernes) ;
-        viernes.setOnClickListener(this);
+             viernes.setOnClickListener(this);
 
-
+        asd = (Button)view.findViewById(R.id.asd) ;
+        asd.setOnClickListener(this);
 
 
 
@@ -144,7 +149,7 @@ public class FragmentMesas  extends android.support.v4.app.Fragment implements V
 }
 
     private void downloadPdf(DataSnapshot dataSnapshot) {
-            for (int u=0; u<5; u++){
+            for (int u=0; u<6; u++){
         String downlo   = String.valueOf(dataSnapshot.child(dia[u]).child("url").getValue())  ;
             direc[u]= downlo;}
 

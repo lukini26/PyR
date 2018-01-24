@@ -20,7 +20,7 @@ public class PermissionActivity extends AbsRuntimePermission {
     @Override
     public void onPermissionsGranted(int requestCode) {
         //Do anything when permisson granted
-        Toast.makeText(getApplicationContext(), "Permission granted", Toast.LENGTH_LONG).show();
+       // Toast.makeText(getApplicationContext(), "Permission granted", Toast.LENGTH_LONG).show();
         Intent hola = new Intent (PermissionActivity.this,NoticiasActivity.class);
         startActivity(hola);
     }
