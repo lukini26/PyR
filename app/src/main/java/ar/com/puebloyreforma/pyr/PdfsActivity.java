@@ -24,6 +24,7 @@ public class PdfsActivity extends MyAppCompatActivity {
 
 
 
+
         setContentView(R.layout.activity_pdfs);
 
             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
