@@ -31,8 +31,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.daimajia.androidanimations.library.Techniques;
-import com.daimajia.androidanimations.library.YoYo;
+
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.android.gms.ads.formats.NativeAd;
 import com.google.android.gms.analytics.HitBuilders;

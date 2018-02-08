@@ -1,17 +1,16 @@
 package ar.com.puebloyreforma.pyr;
 
 import android.content.Intent;
-import android.graphics.Color;
+
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.Toast;
+
 
 import com.google.firebase.messaging.FirebaseMessaging;
-import com.hitomi.cmlibrary.CircleMenu;
-import com.hitomi.cmlibrary.OnMenuSelectedListener;
 
-import java.util.concurrent.TimeUnit;
+
+
 
 public class MainActivity extends AppCompatActivity {
 
