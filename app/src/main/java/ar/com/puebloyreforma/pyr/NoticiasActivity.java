@@ -33,7 +33,7 @@ import android.widget.Toast;
 
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
-import com.google.android.gms.ads.formats.NativeAd;
+
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
 import com.google.firebase.database.ChildEventListener;
