@@ -21,6 +21,14 @@
     tools:context="ar.com.puebloyreforma.pyr.ContactoActivity">
 
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo2018png"/>
+
+
+
 
 
     <br.com.bloder.magic.view.MagicButton
@@ -39,6 +47,7 @@
         android:layout_width="0dp"
         android:layout_height="20dp"
         android:layout_weight="0" />
+
 
 
 
@@ -94,11 +103,8 @@
         app:icon_button_color="#01ffffff"
         app:expandable_area_color="#a373d5"/>
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:src="@drawable/mesafinal"/>
+
+
 
 
 

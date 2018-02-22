@@ -21,5 +21,13 @@ tools:context="ar.com.puebloyreforma.pyr.CalendarActivity">
      android:layout_width="match_parent"
      android:layout_height="match_parent" />
 
+
     </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:src="@drawable/referencias01"
+        android:layout_gravity="bottom|end"/>
+
 </FrameLayout>

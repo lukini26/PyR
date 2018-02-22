@@ -8,15 +8,12 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    android:background="@drawable/aa"
+    android:background="@color/colorPrimaryDark"
     tools:context="ar.com.puebloyreforma.pyr.MainActivity">
-
-
-    <TextView
-        android:id="@+id/textView"
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="HOLA VIEJA YA ESTA LA APK" />
+        android:src="@drawable/logo2018png"/>
+
+
 </RelativeLayout>
