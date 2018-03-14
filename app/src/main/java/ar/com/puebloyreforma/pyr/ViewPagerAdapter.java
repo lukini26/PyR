@@ -54,7 +54,7 @@ public class ViewPagerAdapter extends PagerAdapter{
             Picasso.with(activity.getApplicationContext())
                     .load(images[position])
                     //.placeholder(R.mipmap.pyricon)
-                    //.error(R.mipmap.pyricon)
+                    .error(R.mipmap.pyricon)
                     .into(image);
 
         }

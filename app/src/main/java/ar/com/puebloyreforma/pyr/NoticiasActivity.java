@@ -50,6 +50,7 @@ import java.io.File;
 import java.net.URI;
 import java.util.ArrayList;
 
+
 public class NoticiasActivity extends MyAppCompatActivity {
 
     private RecyclerView mBlogList;

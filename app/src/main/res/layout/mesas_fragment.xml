@@ -5,16 +5,13 @@
     android:gravity="left|center"
     android:background="@drawable/tipitto">
 
-    <View
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_weight="0" />
+
 
     <Button
         android:id="@+id/lunes"
         style="@style/BlackButton"
         android:layout_width="242dp"
-        android:layout_height="wrap_content"
+        android:layout_height="42dp"
         android:background="@drawable/bb"
         android:text="Lunes" />
     <View
@@ -25,7 +22,7 @@
     <Button
         android:id="@+id/martes"
         android:layout_width="242dp"
-        android:layout_height="wrap_content"
+        android:layout_height="42dp"
         style="@style/BlackButton"
         android:background="@drawable/bb"
         android:text="Martes" />
@@ -36,7 +33,7 @@
     <Button
         android:id="@+id/asd"
         android:layout_width="242dp"
-        android:layout_height="wrap_content"
+        android:layout_height="42dp"
         style="@style/BlackButton"
         android:background="@drawable/bb"
         android:text="miercoles" />
@@ -55,7 +52,7 @@
         style="@style/BlackButton"
         android:background="@drawable/bb"
         android:layout_width="242dp"
-        android:layout_height="wrap_content"
+        android:layout_height="42dp"
         android:text="Jueves" />
 
     <View
@@ -67,12 +64,12 @@
         style="@style/BlackButton"
         android:background="@drawable/bb"
         android:layout_width="242dp"
-        android:layout_height="wrap_content"
+        android:layout_height="42dp"
         android:text="Viernes" />
     <Button
         android:id="@+id/mierco"
         android:layout_width="242dp"
-        android:layout_height="wrap_content"
+        android:layout_height="42dp"
         style="@style/BlackButton"
         android:background="@drawable/bb"
         android:text="Miercoles"
