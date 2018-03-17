@@ -6,7 +6,7 @@
     <item android:id="@+id/noticias" android:title="Noticias" android:icon="@drawable/iconews"> </item>
     <item android:id="@+id/calendario" android:title="Calendario" android:icon="@drawable/icocalen"></item>
     <item android:id="@+id/aulas" android:title="Aulas de cursado y mesas" android:icon="@drawable/icoreg"></item>
-    <item android:id="@+id/reglamento" android:title="Reglamento" android:icon="@drawable/icoreg"></item>
+    <item android:id="@+id/reglamento" android:title="Reglamento" android:icon="@drawable/ic_bookmark_button"></item>
     <item android:id="@+id/sysacad" android:title="Sysacad" android:icon="@drawable/icosysa"></item>
     <item android:id="@+id/contacto" android:title="Contacto" android:icon="@drawable/icocon"></item>
 
