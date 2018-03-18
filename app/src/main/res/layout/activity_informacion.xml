@@ -35,9 +35,9 @@
                app:tabGravity="fill"
                app:tabMode="fixed"
                android:id="@+id/tablayout_id"
-               app:tabTextColor="@color/textcolor"
-               app:tabIndicatorColor="@color/textcolor"
-               android:background="@color/colorPrimary"
+               app:tabTextColor="#141f41"
+               app:tabIndicatorColor="#141f41"
+               android:background="#FFF"
                ></android.support.design.widget.TabLayout>
 
             <android.support.v4.view.ViewPager

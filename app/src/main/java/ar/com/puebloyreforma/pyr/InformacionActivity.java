@@ -35,7 +35,7 @@ public class InformacionActivity extends MyAppCompatActivity {
         viewPager  = (ViewPager) findViewById(R.id.ViewPager_info);
         ViewPagerPdfsAdapter adapter = new ViewPagerPdfsAdapter(getSupportFragmentManager());
         //agregar fragmentos
-        adapter.AddFragment(new FragmentHorarios(),"Horarios");
+        adapter.AddFragment(new FragmentHorarios(),"Aulas");
         adapter.AddFragment(new FragmentMesas(),"Mesas");
         //adapter.AddFragment(new FragmentReglamento(),"reglamento");
 

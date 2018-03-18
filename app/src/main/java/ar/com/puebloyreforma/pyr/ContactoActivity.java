@@ -2,23 +2,21 @@ package ar.com.puebloyreforma.pyr;
 //198838995839 face id
 
 import android.content.ActivityNotFoundException;
-import android.content.Context;
+
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.net.Uri;
-import android.support.v4.text.util.LinkifyCompat;
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.Toast;
 
 import java.util.List;
 
 import br.com.bloder.magic.view.MagicButton;
 
-import static android.widget.Toast.LENGTH_LONG;
+
 
 public class ContactoActivity extends MyAppCompatActivity {
 
@@ -36,7 +34,7 @@ public class ContactoActivity extends MyAppCompatActivity {
         btf.setMagicButtonClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"hola", Toast.LENGTH_SHORT).show();
+
                 launchFacebook();
             }
         });
@@ -46,7 +44,7 @@ public class ContactoActivity extends MyAppCompatActivity {
         btins.setMagicButtonClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"hola", Toast.LENGTH_SHORT).show();
+
                 Uri uri = Uri.parse("http://instagram.com/_u/puebloyreforma");
                 Intent likeIng = new Intent(Intent.ACTION_VIEW, uri);
 
