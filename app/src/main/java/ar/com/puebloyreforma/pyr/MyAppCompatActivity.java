@@ -77,6 +77,13 @@ public abstract class MyAppCompatActivity extends AppCompatActivity {
                         break;
 
 
+                    case R.id.planes:
+                        //Toast.makeText(MainActivity.this, "El tac se la come", Toast.LENGTH_SHORT).show();
+                        Intent sobamxla = new Intent (MyAppCompatActivity.this,PlanesActivity.class);
+                        startActivity(sobamxla);
+                        break;
+
+
                 }
 
 

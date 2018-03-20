@@ -10,9 +10,9 @@
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/pyricon"
         android:label="@string/app_name"
-        android:hardwareAccelerated="false"
         android:largeHeap="true"
         android:roundIcon="@mipmap/pyricon_round"
         android:supportsRtl="true"
@@ -24,14 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
-
-
-        <activity android:name=".InformacionActivity">
-
-
-        </activity>
+        <activity android:name=".InformacionActivity"></activity>
         <activity android:name=".ReglamentoActivity" />
         <activity android:name=".SysacadActivity" />
         <activity android:name=".CalendarActivity" />
@@ -58,8 +51,6 @@
             </intent-filter>
         </activity>
 
-
-
         <service android:name=".FirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
@@ -84,13 +75,8 @@
         </provider>
 
         <activity android:name=".PdfsActivity" />
-
-
-
-
-
         <activity android:name=".MyAppCompatActivity" />
-
+        <activity android:name=".PlanesActivity" />
     </application>
 
 </manifest>
