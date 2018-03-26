@@ -24,7 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".InformacionActivity"></activity>
+        <activity android:name=".InformacionActivity" />
         <activity android:name=".ReglamentoActivity" />
         <activity android:name=".SysacadActivity" />
         <activity android:name=".CalendarActivity" />
@@ -77,6 +77,7 @@
         <activity android:name=".PdfsActivity" />
         <activity android:name=".MyAppCompatActivity" />
         <activity android:name=".PlanesActivity" />
+        <activity android:name=".CustomscheActivity"></activity>
     </application>
 
 </manifest>
