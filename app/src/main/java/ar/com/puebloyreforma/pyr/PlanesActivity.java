@@ -35,7 +35,7 @@ public class PlanesActivity extends MyAppCompatActivity {
             sistemas.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view1) {
-                    String url = "https://firebasestorage.googleapis.com/v0/b/pueblo-y-reforma.appspot.com/o/ISI.pdf?alt=media&token=208552e0-b685-417b-a002-f62fe5553027";
+                    String url = "http://puebloyreforma.com.ar/academicas/planes/ISI.pdf";
                     Intent i = new Intent(Intent.ACTION_VIEW );
                     i.setData(Uri.parse(url));
                     startActivity(i);
@@ -49,7 +49,7 @@ public class PlanesActivity extends MyAppCompatActivity {
              analista.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view1) {
-                String url = "https://docs.google.com/uc?export=download&id=0BzI9Fwark4aiQXRGQXJyN0ItTHc";
+                String url = "http://puebloyreforma.com.ar/academicas/planes/ISI-AUS.pdf";
                 Intent i = new Intent(Intent.ACTION_VIEW );
                 i.setData(Uri.parse(url));
                 startActivity(i);
@@ -65,7 +65,7 @@ public class PlanesActivity extends MyAppCompatActivity {
         mecanica.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view1) {
-                String url = "https://firebasestorage.googleapis.com/v0/b/pueblo-y-reforma.appspot.com/o/IM.pdf?alt=media&token=a1d8aa9d-fa7d-4707-833c-9a406ed426d5";
+                String url = "http://puebloyreforma.com.ar/academicas/planes/IM.pdf";
                 Intent i = new Intent(Intent.ACTION_VIEW );
                 i.setData(Uri.parse(url));
                 startActivity(i);
@@ -78,7 +78,7 @@ public class PlanesActivity extends MyAppCompatActivity {
         electrica.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view1) {
-                String url = "https://firebasestorage.googleapis.com/v0/b/pueblo-y-reforma.appspot.com/o/IE.pdf?alt=media&token=aa4d0bae-b0eb-4944-9008-aecd8eb9c5e3";
+                String url = "http://puebloyreforma.com.ar/academicas/planes/IE.pdf";
                 Intent i = new Intent(Intent.ACTION_VIEW );
                 i.setData(Uri.parse(url));
                 startActivity(i);
@@ -91,7 +91,7 @@ public class PlanesActivity extends MyAppCompatActivity {
         civil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view1) {
-                String url = "https://firebasestorage.googleapis.com/v0/b/pueblo-y-reforma.appspot.com/o/IC.pdf?alt=media&token=a70be070-5e9e-40d7-a6fc-dcc56a5ffafc";
+                String url = "http://puebloyreforma.com.ar/academicas/planes/IC.pdf";
                 Intent i = new Intent(Intent.ACTION_VIEW );
                 i.setData(Uri.parse(url));
                 startActivity(i);
@@ -109,7 +109,7 @@ public class PlanesActivity extends MyAppCompatActivity {
         quimica.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view1) {
-                String url = "https://firebasestorage.googleapis.com/v0/b/pueblo-y-reforma.appspot.com/o/IQ.pdf?alt=media&token=f1f00e12-d412-4242-9669-6a480d51d0e3";
+                String url = "http://puebloyreforma.com.ar/academicas/planes/IQ.pdf";
                 Intent i = new Intent(Intent.ACTION_VIEW );
                 i.setData(Uri.parse(url));
                 startActivity(i);

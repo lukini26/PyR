@@ -10,5 +10,5 @@
     <item android:id="@+id/sysacad" android:title="Sysacad" android:icon="@drawable/icosysa"></item>
     <item android:id="@+id/contacto" android:title="Contacto" android:icon="@drawable/icocon"></item>
     <item android:id="@+id/planes" android:title="Planes" android:icon="@drawable/icosysa"></item>
-
+    <item android:id="@+id/hora" android:title="Horario" android:icon="@drawable/icosysa"></item>
 </menu>
