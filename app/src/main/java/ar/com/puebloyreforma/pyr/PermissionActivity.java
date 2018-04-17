@@ -11,9 +11,9 @@ public class PermissionActivity extends AbsRuntimePermission {
         setContentView(R.layout.activity_permission);
 
         requestAppPermissions(new String[]{
-                        Manifest.permission.READ_CONTACTS,
+
                         Manifest.permission.WRITE_EXTERNAL_STORAGE,
-                        Manifest.permission.WRITE_CONTACTS},
+                      },
              R.string.msj,REQUEST_PERMISSION);
     }
 
