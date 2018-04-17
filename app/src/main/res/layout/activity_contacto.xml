@@ -1,15 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".ContactoActivity">
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:paddingBottom="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:orientation="vertical"
     tools:context="ar.com.puebloyreforma.pyr.ContactoActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo2018png"/>
+
 
 
 
@@ -26,6 +43,12 @@
         app:hide_text="Facebook"
         app:icon_button_color="#375dda"
         app:expandable_area_color="#533dff"/>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_weight="0" />
+
+
 
 
 
@@ -42,6 +65,11 @@
         app:hide_text="Twitter"
         app:icon_button_color="#d0d4e2"
         app:expandable_area_color="#0c92b7"/>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_weight="0" />
+
 
     <br.com.bloder.magic.view.MagicButton
         android:id="@+id/magic_button_gmas"
@@ -55,6 +83,11 @@
         app:hide_text="Google+"
         app:icon_button_color="#b40033"
         app:expandable_area_color="#cf3f57"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_weight="0" />
 
 
     <br.com.bloder.magic.view.MagicButton
@@ -80,4 +113,8 @@
 
 
 
+
+
+
 </LinearLayout>
+</FrameLayout>

@@ -8,13 +8,14 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
+    android:background="@color/colorPrimaryDark"
     tools:context="ar.com.puebloyreforma.pyr.MainActivity">
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/logo2018png"/>
 
-
-
-    <com.hitomi.cmlibrary.CircleMenu
-        android:id="@+id/circle_menu"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
 
 </RelativeLayout>

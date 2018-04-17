@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+
+    >
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_weight="0" />
+    <Button
+        android:id="@+id/lunes"
+        style="@style/BlackButton"
+        android:layout_width="110dp"
+        android:layout_height="170dp"
+        android:background="@drawable/bb"
+        android:text="Lunes" />
+
+
+        <Button
+        android:id="@+id/martes"
+
+        style="@style/BlackButton"
+        android:layout_width="110dp"
+        android:layout_height="170dp"
+        android:background="@drawable/bb"
+        android:text="martes"/>
+
+    <Button
+        android:id="@+id/asd"
+        android:layout_width="140dp"
+        android:layout_height="170dp"
+        style="@style/BlackButton"
+        android:background="@drawable/bb"
+        android:text="miercoles" />
+
+
+
+    <Button
+        android:id="@+id/jueves"
+        style="@style/BlackButton"
+        android:background="@drawable/bb"
+        android:layout_width="110dp"
+        android:layout_height="170dp"
+        android:text="Jueves" />
+
+
+    <Button
+        android:id="@+id/viernes"
+        style="@style/BlackButton"
+        android:background="@drawable/bb"
+        android:layout_width="120dp"
+        android:layout_height="170dp"
+        android:text="viernes" />
+
+    <Button
+        android:id="@+id/mierco"
+        style="@style/BlackButton"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:background="@drawable/bb"
+        android:text="Miercoles"
+        android:visibility="invisible" />
+
+</LinearLayout>

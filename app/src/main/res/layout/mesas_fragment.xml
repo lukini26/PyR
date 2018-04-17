@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+
+
+    >
+
+
+
+    <Button
+        android:id="@+id/lunes"
+        style="@style/BlackButton"
+        android:layout_width="242dp"
+        android:layout_height="42dp"
+        android:background="@drawable/bb"
+        android:text="Lunes" />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_weight="0" />
+
+    <Button
+        android:id="@+id/martes"
+        android:layout_width="242dp"
+        android:layout_height="42dp"
+        style="@style/BlackButton"
+        android:background="@drawable/bb"
+        android:text="Martes" />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_weight="0" />
+    <Button
+        android:id="@+id/asd"
+        android:layout_width="242dp"
+        android:layout_height="42dp"
+        style="@style/BlackButton"
+        android:background="@drawable/bb"
+        android:text="miercoles" />
+
+
+
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_weight="0" />
+
+    <Button
+        android:id="@+id/jueves"
+        style="@style/BlackButton"
+        android:background="@drawable/bb"
+        android:layout_width="242dp"
+        android:layout_height="42dp"
+        android:text="Jueves" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_weight="0" />
+    <Button
+        android:id="@+id/viernes"
+        style="@style/BlackButton"
+        android:background="@drawable/bb"
+        android:layout_width="242dp"
+        android:layout_height="42dp"
+        android:text="Viernes" />
+    <Button
+        android:id="@+id/mierco"
+        android:layout_width="242dp"
+        android:layout_height="42dp"
+        style="@style/BlackButton"
+        android:background="@drawable/bb"
+        android:text="Miercoles"
+        android:visibility="invisible"/>
+
+</LinearLayout>

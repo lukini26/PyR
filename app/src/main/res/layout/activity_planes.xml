@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlanesActivity">
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+
+
+    >
+
+
+
+    <Button
+        android:id="@+id/sistemas"
+        style="@style/BlackButton"
+        android:layout_width="242dp"
+        android:layout_height="42dp"
+        android:background="@drawable/bb"
+        android:text="sistemas" />
+    <Button
+        android:id="@+id/analista"
+        style="@style/BlackButton"
+        android:background="@drawable/bb"
+        android:layout_width="242dp"
+        android:layout_height="42dp"
+        android:text="analista" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_weight="0" />
+
+    <Button
+        android:id="@+id/quimica"
+        android:layout_width="242dp"
+        android:layout_height="42dp"
+        style="@style/BlackButton"
+        android:background="@drawable/bb"
+        android:text="quimica" />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_weight="0" />
+    <Button
+        android:id="@+id/mecanica"
+        android:layout_width="242dp"
+        android:layout_height="42dp"
+        style="@style/BlackButton"
+        android:background="@drawable/bb"
+        android:text="mecanica" />
+
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_weight="0" />
+
+    <Button
+        android:id="@+id/electrica"
+        style="@style/BlackButton"
+        android:background="@drawable/bb"
+        android:layout_width="242dp"
+        android:layout_height="42dp"
+        android:text="electrica" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_weight="0" />
+
+    <Button
+        android:id="@+id/civil"
+        android:layout_width="242dp"
+        android:layout_height="42dp"
+        style="@style/BlackButton"
+        android:background="@drawable/bb"
+        android:text="civil"
+        />
+
+
+</LinearLayout>
+
+
+</FrameLayout>

@@ -31,10 +31,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.daimajia.androidanimations.library.Techniques;
-import com.daimajia.androidanimations.library.YoYo;
+
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
-import com.google.android.gms.ads.formats.NativeAd;
+
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
 import com.google.firebase.database.ChildEventListener;
@@ -51,7 +50,8 @@ import java.io.File;
 import java.net.URI;
 import java.util.ArrayList;
 
-public class NoticiasActivity extends AppCompatActivity {
+
+public class NoticiasActivity extends MyAppCompatActivity {
 
     private RecyclerView mBlogList;
     FirebaseDatabase database;
@@ -65,10 +65,10 @@ public class NoticiasActivity extends AppCompatActivity {
         mBlogList = (RecyclerView)findViewById(R.id.blog_list);
         mBlogList.setHasFixedSize(true);
         mBlogList.setLayoutManager(new LinearLayoutManager(this));
-        YoYo.with(Techniques.RotateInDownRight)
+        /*YoYo.with(Techniques.RotateInDownRight)
                 .duration(700)
                 .repeat(1)
-                .playOn(findViewById(R.id.blog_list));
+                .playOn(findViewById(R.id.blog_list));*/
 
         // Send a Query to the database
         database = FirebaseDatabase.getInstance();
@@ -124,7 +124,7 @@ public class NoticiasActivity extends AppCompatActivity {
                                             .setAllowedOverRoaming(false)
                                             .setTitle(filename)
                                             .setMimeType("image/jpeg")
-                                            .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
+                                           // .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
                                             .setDestinationInExternalPublicDir(Environment.DIRECTORY_PICTURES,
                                                     File.separator + "pyr" + File.separator + filename);
                                 String pathl = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES)+ "/Pyr/" + filename;
@@ -134,7 +134,7 @@ public class NoticiasActivity extends AppCompatActivity {
 
                                 Intent shareIntent = new Intent();
                                 shareIntent.setAction(Intent.ACTION_SEND);
-                                shareIntent.putExtra(Intent.EXTRA_TEXT, "This is one image I'm sharing.");
+                                shareIntent.putExtra(Intent.EXTRA_TEXT, "http://www.puebloyreforma.com.ar/");
                                 shareIntent.putExtra(Intent.EXTRA_STREAM, path);
                                 shareIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
                                 shareIntent.setType("image/*");
@@ -199,7 +199,7 @@ public class NoticiasActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     // click en la imagen hace algo
                     //añadir luego
-                    Toast.makeText(v.getContext(), ("hola"+ getPosition()), Toast.LENGTH_SHORT).show();
+                   // Toast.makeText(v.getContext(), ("hola"+ getPosition()), Toast.LENGTH_SHORT).show();
 
                 }
             });
