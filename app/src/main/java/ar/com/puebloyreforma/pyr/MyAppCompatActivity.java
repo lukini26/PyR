@@ -9,11 +9,11 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
+
 
 public abstract class MyAppCompatActivity extends AppCompatActivity {
 
@@ -51,7 +51,6 @@ public abstract class MyAppCompatActivity extends AppCompatActivity {
                         startActivity(movef);
                         break;
                     case R.id.sysacad:
-                        Toast.makeText(MyAppCompatActivity.this, "Fuiste redirigido al sitio de la UtnFrro", Toast.LENGTH_SHORT).show();
                         Intent movefa = new Intent (MyAppCompatActivity.this,SysacadActivity.class);
                         startActivity(movefa);
                         break;
