@@ -1,6 +1,7 @@
 package ar.com.puebloyreforma.pyr;
 
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -28,6 +30,7 @@ public class FragmentMesas  extends android.support.v4.app.Fragment implements V
 
 
     public String[] dia={ "lunes" , "martes" ,"mierco " ,"jueves" , "viernes" ,"asd"  } ;
+    String finale = "" ;
      String[] direc ={ "lunes" , "martes" ,"mierco " ,"jueves" , "viernes", "asd"   } ;
      //esto esta asi porque soy un villero y copipasteo para inicilizar un array pero me la re banco vieja
 
@@ -50,8 +53,11 @@ public class FragmentMesas  extends android.support.v4.app.Fragment implements V
 
 
     @Override
-    public void onClick(View v) {
-            String finale = "" ;
+    public void onClick(final View v) {
+        new Thread(new Runnable() {
+            public void run() {
+
+
 
         switch (v.getId()) {
 
@@ -85,13 +91,21 @@ public class FragmentMesas  extends android.support.v4.app.Fragment implements V
 
             default:
                 break;
-        }
+        }  }
+        }).start();
 
 
         String url = finale;
         Intent i = new Intent(Intent.ACTION_VIEW );
         i.setData(Uri.parse(url));
-        startActivity(i);
+        try {  startActivity(i);
+           
+        } catch(ActivityNotFoundException activityNotFound) {
+
+            Toast.makeText(getActivity(), "Aun no esta disponible desde bedelia",
+                    Toast.LENGTH_LONG).show();
+        }
+      
 
 
 
@@ -131,7 +145,7 @@ public class FragmentMesas  extends android.support.v4.app.Fragment implements V
 
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
+            public void onDataChange( DataSnapshot dataSnapshot) {
                 downloadPdf(dataSnapshot);
 
             }
@@ -148,15 +162,22 @@ public class FragmentMesas  extends android.support.v4.app.Fragment implements V
 
 }
 
-    private void downloadPdf(DataSnapshot dataSnapshot) {
-            for (int u=0; u<6; u++){
+    private void downloadPdf(final DataSnapshot dataSnapshot) {
+        new Thread(new Runnable() {
+            public void run() {
+
+
+
+                for (int u=0; u<6; u++){
         String downlo   = String.valueOf(dataSnapshot.child(dia[u]).child("url").getValue())  ;
             direc[u]= downlo;}
 
-
+            }
+        }).start();
+    }
 
     }
 
 
 
-}
+
