@@ -27,8 +27,11 @@ public class InformacionActivity extends MyAppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_informacion);
+        new Thread(new Runnable() {
+            public void run() {
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+
+                Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("ChildNavigationActivity");
         tabLayout = (TabLayout) findViewById(R.id.tablayout_id);
         appBarLayout = (AppBarLayout)findViewById(R.id.appbarid) ;
@@ -42,5 +45,8 @@ public class InformacionActivity extends MyAppCompatActivity {
         //configuracion
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
+            }
+        }).start();
 
-}}
+
+    }}

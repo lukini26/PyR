@@ -99,46 +99,54 @@ public class NoticiasActivity extends MyAppCompatActivity {
 
 
                             @Override
-                            public void onClick(View view) {
+                            public void onClick(final View view) {
+
+                                new Thread(new Runnable() {
+                                    public void run() {
 
 
 
-                                    String url = model.getUrl() ;
-                                    String filename = model.getTitle() +".jpg";
-                                String downloadUrlOfImage = url;
 
-                                    File direct =
-                                            new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES)
-                                                    .getAbsolutePath() + "/" + "/Pyr" + "/");
+                                        String url = model.getUrl() ;
+                                        String filename = model.getTitle() +".jpg";
+                                        String downloadUrlOfImage = url;
+
+                                        File direct =
+                                                new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES)
+                                                        .getAbsolutePath() + "/" + "/Pyr" + "/");
 
 
-                                    if (!direct.exists()) {
-                                        direct.mkdir();
-                                        Log.d("pyr", "dir created for first time");
+                                        if (!direct.exists()) {
+                                            direct.mkdir();
+                                            Log.d("pyr", "dir created for first time");
+                                        }
+
+                                        DownloadManager dm = (DownloadManager)getBaseContext().getSystemService(Context.DOWNLOAD_SERVICE);
+                                        Uri downloadUri = Uri.parse(downloadUrlOfImage);
+                                        DownloadManager.Request request = new DownloadManager.Request(downloadUri);
+                                        request.setAllowedNetworkTypes(DownloadManager.Request.NETWORK_WIFI | DownloadManager.Request.NETWORK_MOBILE)
+                                                .setAllowedOverRoaming(false)
+                                                .setTitle(filename)
+                                                .setMimeType("image/jpeg")
+                                                // .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
+                                                .setDestinationInExternalPublicDir(Environment.DIRECTORY_PICTURES,
+                                                        File.separator + "pyr" + File.separator + filename);
+                                        String pathl = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES)+ "/Pyr/" + filename;
+                                        dm.enqueue(request);
+
+                                        Uri path = FileProvider.getUriForFile(view.getContext() ,"ar.com.puebloyreforma.pyr", new File(pathl) ) ;
+
+                                        Intent shareIntent = new Intent();
+                                        shareIntent.setAction(Intent.ACTION_SEND);
+                                        shareIntent.putExtra(Intent.EXTRA_TEXT, "http://www.puebloyreforma.com.ar/");
+                                        shareIntent.putExtra(Intent.EXTRA_STREAM, path);
+                                        shareIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+                                        shareIntent.setType("image/*");
+                                        startActivity(Intent.createChooser(shareIntent, "Share..."));
+
+
                                     }
-
-                                    DownloadManager dm = (DownloadManager)getBaseContext().getSystemService(Context.DOWNLOAD_SERVICE);
-                                    Uri downloadUri = Uri.parse(downloadUrlOfImage);
-                                    DownloadManager.Request request = new DownloadManager.Request(downloadUri);
-                                    request.setAllowedNetworkTypes(DownloadManager.Request.NETWORK_WIFI | DownloadManager.Request.NETWORK_MOBILE)
-                                            .setAllowedOverRoaming(false)
-                                            .setTitle(filename)
-                                            .setMimeType("image/jpeg")
-                                           // .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
-                                            .setDestinationInExternalPublicDir(Environment.DIRECTORY_PICTURES,
-                                                    File.separator + "pyr" + File.separator + filename);
-                                String pathl = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES)+ "/Pyr/" + filename;
-                                    dm.enqueue(request);
-
-                                Uri path = FileProvider.getUriForFile(view.getContext() ,"ar.com.puebloyreforma.pyr", new File(pathl) ) ;
-
-                                Intent shareIntent = new Intent();
-                                shareIntent.setAction(Intent.ACTION_SEND);
-                                shareIntent.putExtra(Intent.EXTRA_TEXT, "http://www.puebloyreforma.com.ar/");
-                                shareIntent.putExtra(Intent.EXTRA_STREAM, path);
-                                shareIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-                                shareIntent.setType("image/*");
-                                startActivity(Intent.createChooser(shareIntent, "Share..."));
+                                }).start();
 
 
 
@@ -171,9 +179,11 @@ public class NoticiasActivity extends MyAppCompatActivity {
 
 
 
-                                                        }
-                        });
-                    }
+
+                            }
+                                });
+                            }
+
                 };
         mBlogList.setAdapter(firebaseRecyclerAdapter);
     }
