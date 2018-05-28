@@ -4,7 +4,6 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.Manifest.permission.WRITE_EXTERNAL_STORAGE" />
-
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
@@ -77,7 +76,7 @@
         <activity android:name=".MyAppCompatActivity" />
         <activity android:name=".PlanesActivity" />
         <activity android:name=".CustomscheActivity" />
-        <activity android:name=".IngresantesActivity"></activity>
+        <activity android:name=".IngresantesActivity" />
     </application>
 
 </manifest>

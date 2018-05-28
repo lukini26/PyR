@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PdfsActivity">
+    <Spinner
+        android:id="@+id/meses_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:tools="http://schemas.android.com/tools"
 android:id="@+id/activity_main"
@@ -16,6 +21,7 @@ android:paddingLeft="16dp"
 android:paddingRight="16dp"
 android:paddingTop="16dp"
 tools:context="ar.com.puebloyreforma.pyr.CalendarActivity">
+
  <android.support.v4.view.ViewPager
      android:id="@+id/ViewPager"
      android:layout_width="match_parent"
@@ -29,5 +35,6 @@ tools:context="ar.com.puebloyreforma.pyr.CalendarActivity">
         android:layout_height="55dp"
         android:src="@drawable/referencias01"
         android:layout_gravity="bottom|end"/>
+
 
 </FrameLayout>
