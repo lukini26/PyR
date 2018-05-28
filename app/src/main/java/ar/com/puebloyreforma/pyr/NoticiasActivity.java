@@ -138,7 +138,7 @@ public class NoticiasActivity extends MyAppCompatActivity {
 
                                         Intent shareIntent = new Intent();
                                         shareIntent.setAction(Intent.ACTION_SEND);
-                                        shareIntent.putExtra(Intent.EXTRA_TEXT, "http://www.puebloyreforma.com.ar/");
+                                        shareIntent.putExtra(Intent.EXTRA_TEXT, "Bajate la app! https://goo.gl/7uZzYw");
                                         shareIntent.putExtra(Intent.EXTRA_STREAM, path);
                                         shareIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
                                         shareIntent.setType("image/*");

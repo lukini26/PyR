@@ -44,17 +44,21 @@ public class FragmentReglamento extends android.support.v4.app.Fragment {
             @Override
             public void onClick(View view) {
 
-                setTarget("Ord1549");
-                Intent hola = new Intent ((getActivity()),ReglamentoActivity.class);
-                hola.putExtra("TARGET", getTarget());
-                startActivity(hola);
+
+                new Thread(new Runnable() {
+                public void run() {
+                    setTarget("Ord1549");
+                    Intent hola = new Intent ((getActivity()),ReglamentoActivity.class);
+                    hola.putExtra("TARGET", getTarget());
+                    startActivity(hola);
+
+            }
+            }).start();
+
+
+
             }
         });
-
-
-
-
-
 
 
 
