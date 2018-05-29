@@ -77,6 +77,7 @@
         <activity android:name=".PlanesActivity" />
         <activity android:name=".CustomscheActivity" />
         <activity android:name=".IngresantesActivity" />
+        <activity android:name=".CharlasActivity"></activity>
     </application>
 
 </manifest>

@@ -24,4 +24,12 @@ public class PermissionActivity extends AbsRuntimePermission {
         Intent hola = new Intent (PermissionActivity.this,NoticiasActivity.class);
         startActivity(hola);
     }
+
+    @Override
+    public void onBackPressed()
+    {
+
+        finish();
+        System.exit(0);
+    }
 }
