@@ -153,8 +153,7 @@ public abstract class MyAppCompatActivity extends AppCompatActivity {
 
                     case R.id.hora:
                         Toast.makeText(MyAppCompatActivity.this, "Proximamente...!", Toast.LENGTH_SHORT).show();
-                        /*Intent soba4mxla = new Intent (MyAppCompatActivity.this,CustomSch.class);
-                        startActivity(soba4mxla);*/
+
                         break;
 
 
