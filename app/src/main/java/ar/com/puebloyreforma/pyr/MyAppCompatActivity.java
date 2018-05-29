@@ -13,6 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 
 public abstract class MyAppCompatActivity extends AppCompatActivity {
@@ -151,9 +152,9 @@ public abstract class MyAppCompatActivity extends AppCompatActivity {
 
 
                     case R.id.hora:
-                        //Toast.makeText(MainActivity.this, "El tac se la come", Toast.LENGTH_SHORT).show();
-                        Intent soba4mxla = new Intent (MyAppCompatActivity.this,CharlasActivity.class);
-                        startActivity(soba4mxla);
+                        Toast.makeText(MyAppCompatActivity.this, "Proximamente...!", Toast.LENGTH_SHORT).show();
+                        /*Intent soba4mxla = new Intent (MyAppCompatActivity.this,CustomSch.class);
+                        startActivity(soba4mxla);*/
                         break;
 
 
