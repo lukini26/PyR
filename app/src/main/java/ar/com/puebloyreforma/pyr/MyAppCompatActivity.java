@@ -99,69 +99,14 @@ public abstract class MyAppCompatActivity extends AppCompatActivity {
 
 
                         case R.id.hora:
-                            //Toast.makeText(MainActivity.this, "El tac se la come", Toast.LENGTH_SHORT).show();
-                            Intent soba4mxla = new Intent (MyAppCompatActivity.this,CustomscheActivity.class);
-                            startActivity(soba4mxla);
+                            Toast.makeText(MyAppCompatActivity.this, "Proximamente...!", Toast.LENGTH_SHORT).show();
+                            /*Intent soba4mxla = new Intent (MyAppCompatActivity.this,CustomscheActivity.class);
+                            startActivity(soba4mxla);*/
                             break;
 
 
                     }  }
             }).start();
-
-
-                int id = item.getItemId();
-
-                switch (id) {
-                    case R.id.calendario:
-                        //Toast.makeText(MyAppCompatActivity.this,"elegiste calendario ", Toast.LENGTH_SHORT).show();
-                        Intent movef = new Intent (MyAppCompatActivity.this,CalendarActivity.class);
-                        startActivity(movef);
-                        break;
-                    case R.id.sysacad:
-                        Intent movefa = new Intent (MyAppCompatActivity.this,SysacadActivity.class);
-                        startActivity(movefa);
-                        break;
-                    case R.id.aulas:
-                        //Toast.makeText(MyAppCompatActivity.this, "elegiste ", Toast.LENGTH_SHORT).show();
-                        Intent movefew = new Intent (MyAppCompatActivity.this,InformacionActivity.class);
-                        startActivity(movefew);
-                        break;
-                    case R.id.contacto:
-                        Intent tuvieja = new Intent (MyAppCompatActivity.this,ContactoActivity.class);
-                        startActivity(tuvieja);
-                        break;
-                    case R.id.noticias:
-                        //Toast.makeText(MainActivity.this, "El tac se la come", Toast.LENGTH_SHORT).show();
-                        Intent hola = new Intent (MyAppCompatActivity.this,PermissionActivity.class);
-                        startActivity(hola);
-                        break;
-
-                    case R.id.reglamento:
-                        //Toast.makeText(MainActivity.this, "El tac se la come", Toast.LENGTH_SHORT).show();
-                        Intent sobamela = new Intent (MyAppCompatActivity.this,PdfsActivity.class);
-                        startActivity(sobamela);
-                        break;
-
-
-                    case R.id.planes:
-                        //Toast.makeText(MainActivity.this, "El tac se la come", Toast.LENGTH_SHORT).show();
-                        Intent sobamxla = new Intent (MyAppCompatActivity.this,PlanesActivity.class);
-                        startActivity(sobamxla);
-                        break;
-
-
-
-                    case R.id.hora:
-                        Toast.makeText(MyAppCompatActivity.this, "Proximamente...!", Toast.LENGTH_SHORT).show();
-
-                        break;
-
-
-                }
-
-
-
-
 
 
 
