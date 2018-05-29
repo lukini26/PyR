@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 
 public abstract class MyAppCompatActivity extends AppCompatActivity {
+    boolean tu = false ;
 
 
 
@@ -99,7 +100,7 @@ public abstract class MyAppCompatActivity extends AppCompatActivity {
 
 
                         case R.id.hora:
-                            Toast.makeText(MyAppCompatActivity.this, "Proximamente...!", Toast.LENGTH_SHORT).show();
+                           tu = true ;
                             /*Intent soba4mxla = new Intent (MyAppCompatActivity.this,CustomscheActivity.class);
                             startActivity(soba4mxla);*/
                             break;
@@ -107,6 +108,8 @@ public abstract class MyAppCompatActivity extends AppCompatActivity {
 
                     }  }
             }).start();
+
+            if (tu){ Toast.makeText(MyAppCompatActivity.this, "Proximamente...!", Toast.LENGTH_SHORT).show();tu = false ;}
 
 
 
