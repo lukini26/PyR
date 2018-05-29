@@ -226,8 +226,15 @@ public class NoticiasActivity extends MyAppCompatActivity {
             post_image.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if (extra != null){Toast.makeText(v.getContext(), "anda vieja", Toast.LENGTH_SHORT).show();}
-                    else Toast.makeText(v.getContext(), ("hola"+ getPosition()), Toast.LENGTH_SHORT).show();
+                    if (extra != null){
+
+                        Intent i = new Intent(Intent.ACTION_VIEW);
+                        i.setData(Uri.parse(extra));
+                        v.getContext().startActivity(i);
+
+
+                    }
+//                    else Toast.makeText(v.getContext(), ("hola"+ getPosition()), Toast.LENGTH_SHORT).show();
 
                 }
             });
