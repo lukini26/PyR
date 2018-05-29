@@ -152,7 +152,7 @@ public abstract class MyAppCompatActivity extends AppCompatActivity {
 
                     case R.id.hora:
                         //Toast.makeText(MainActivity.this, "El tac se la come", Toast.LENGTH_SHORT).show();
-                        Intent soba4mxla = new Intent (MyAppCompatActivity.this,CustomscheActivity.class);
+                        Intent soba4mxla = new Intent (MyAppCompatActivity.this,CharlasActivity.class);
                         startActivity(soba4mxla);
                         break;
 

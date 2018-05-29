@@ -91,7 +91,7 @@ public class NoticiasActivity extends MyAppCompatActivity {
                     @Override
                     protected void populateViewHolder(BlogViewHolder viewHolder, final ModelClass model, final int position) {
                         viewHolder.setTitle(model.getTitle());
-                        viewHolder.setImage(getApplicationContext(), model.getImage());
+                        viewHolder.setImage(getApplicationContext(), model.getImage(),model.getExtra());
 
                         viewHolder.button.setOnClickListener(new View.OnClickListener() {
 
@@ -219,10 +219,22 @@ public class NoticiasActivity extends MyAppCompatActivity {
             TextView post_title = (TextView)mView.findViewById(R.id.titleText);
             post_title.setText(title);
         }
-        public void setImage(Context ctx , String image){
+        public void setImage(Context ctx , String image , final String extra){
             ImageView post_image = (ImageView)mView.findViewById(R.id.imageViewy);
-            // We Need TO pass Context
             Picasso.with(ctx).load(image).into(post_image);
+
+            post_image.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (extra != null){Toast.makeText(v.getContext(), "anda vieja", Toast.LENGTH_SHORT).show();}
+                    else Toast.makeText(v.getContext(), ("hola"+ getPosition()), Toast.LENGTH_SHORT).show();
+
+                }
+            });
+
+
+
+
         }    }}
 
 

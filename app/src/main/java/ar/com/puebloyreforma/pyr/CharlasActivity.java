@@ -41,7 +41,7 @@ public class CharlasActivity extends AppCompatActivity {
         webView.getSettings().setBuiltInZoomControls(true);
         webView .getSettings().setDomStorageEnabled(true);
 
-        webView.loadUrl("https://alumnos.frro.utn.edu.ar/");
+        webView.loadUrl("https://docs.google.com/forms/d/1c505kLK1XJdPHJXXGQq55WmVrd6RtZ9r22Q9JqLbX5Q/");
 
     }
 

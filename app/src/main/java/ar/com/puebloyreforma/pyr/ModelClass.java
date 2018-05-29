@@ -6,12 +6,13 @@ package ar.com.puebloyreforma.pyr;
 
 public class ModelClass {
 
-    String title,image, url;
+    String title,image, url , extra;
 
     public ModelClass(String title, String image) {
         this.title = title;
         this.image = image;
         this.url = url;
+        this.extra = extra ;
     }
 
     public ModelClass() {
@@ -37,4 +38,10 @@ public class ModelClass {
     public void setImage(String image) {
         this.image = image;
     }
-}
+
+
+    public  String getExtra() {return extra;}
+    public void setExtra(String extra) {this.extra = extra;}
+
+
+                        }
